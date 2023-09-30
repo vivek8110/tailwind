@@ -1,0 +1,15 @@
+<section class="p-8">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-4">
+        <!-- Repeat this card component 10 times -->
+        <div class="relative bg-white rounded-lg shadow-md overflow-hidden card-container">
+            <img src="./1.jpg" alt="Card Image" class="w-full h-60 object-cover" />
+            <button class="play-button">&#9658;</button>
+            <div class="card-content">
+                <h2 class="text-xl font-semibold text-netflix-red">Card Title</h2>
+                <p class="mt-2 text-netflix-red">Card content goes here...</p>
+                <button class="bg-netflix-red text-white px-4 py-2 rounded-full mt-2 btn-netflix-red">Learn More</button>
+            </div>
+        </div>
+        <!-- Repeat the card component above 9 more times -->
+    </div>
+</section>

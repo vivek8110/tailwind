@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="stylesheet" href="css/style.css" />
+  <!-- <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN"
+      crossorigin="anonymous"
+    /> -->
+  <script src="https://cdn.tailwindcss.com"></script>
+  <title>Document</title>
+  <style>
+    .card-container {
+      position: relative;
+    }
+
+    .card-content {
+      position: absolute;
+      bottom: -100%;
+      left: 0;
+      right: 0;
+      background-color: white;
+      text-align: center;
+      padding: 1rem;
+      opacity: 0;
+      transition: bottom 0.3s ease, opacity 0.3s ease;
+    }
+
+    .card-container:hover .card-content {
+      bottom: 0;
+      opacity: 1;
+    }
+
+    .netflix-bg {
+
+      background-color: #111;
+    }
+  </style>
+</head>
+
+<body>
+  <section class="p-8 netflix-bg">
+    <div class="container mx-auto grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 xl:grid-cols-4 gap-4">
+      <!-- Repeat this card component 4 times -->
+      <div class="relative bg-white rounded-lg shadow-md overflow-hidden card-container">
+        <img src="./1.jpg" alt="Card Image" class="w-full h-60 object-cover" />
+        <!-- <button class="play-button">&#9658;</button> -->
+        <div class="card-content">
+          <h2 class="text-xl font-semibold text-netflix-red">Card Title</h2>
+          <p class="mt-2 text-netflix-red">Card content goes here...</p>
+          <button class="bg-blue-500 text-white px-4 py-2 rounded-full mt-2 hover:bg-blue-600">play</button>
+        </div>
+      </div>
+      <!-- Repeat the card component above 4 more times -->
+
+    </div>
+  </section>
+</body>
+
+</html>
